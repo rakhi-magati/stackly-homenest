@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>My Bookings | Home Nest</title>
+    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body data-page="dash">
+    <div class="dash-shell">
+        <aside class="side"><a class="dash-brand" href="index.html"><span class="dash-home">⌂</span><span>Home
+                    Nest<small>Find Your Perfect Space</small></span></a>
+            <nav class="dash-nav" aria-label="Dashboard navigation"><a href="index.html"><span>⌂</span>Dashboard</a><a
+                    class="on" href="dashboard.html"><span>▣</span>My Bookings</a><a
+                    href="index.html#props"><span>♡</span>Favourites</a><a href="#"
+                    onclick="toast('Profile coming soon');return false"><span>♟</span>Profile</a><a href="#"
+                    onclick="toast('No new messages');return false"><span>☵</span>Messages</a><a href="#"
+                    onclick="toast('Settings coming soon');return false"><span>⚙</span>Settings</a></nav>
+        </aside>
+        <main class="dm">
+            <div class="dash-head">
+                <div>
+                    <h1>My Bookings</h1>
+                    <p>Track and manage your property bookings</p>
+                </div>
+                <div class="dash-user"><button class="heart" aria-label="Favourites"
+                        onclick="toast('Saved homes: '+J('hn_fav',[]).length)">♡</button><span class="dash-avatar"
+                        id="dash-avatar"></span></div>
+            </div>
+            <div class="tabs" id="tabs"></div>
+            <div id="bl"></div>
+        </main>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

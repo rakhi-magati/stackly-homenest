@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home Nest</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="home">
+    <header id="hdr"></header>
+    <section class="hero">
+        <div class="art hero-photo" aria-hidden="true"></div>
+        <div class="wrap">
+            <div class="hero-copy">
+                <span class="eyebrow">Your dream home awaits</span>
+                <h1>Find the Perfect Property for a Better Tomorrow</h1>
+                <p>Explore thousands of properties for sale and rent. Whether you're buying, selling, or renting, we make it simple.</p>
+            </div>
+        </div>
+    </section>
+    <div class="wrap">
+        <form class="search" id="sf">
+            <label class="search-field location-field">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <span class="field-copy"><span class="field-title">Location</span><input id="sl" placeholder="Enter city, area or landmark" aria-label="Location"></span>
+            </label>
+            <label class="search-field">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V8l9-5 9 5v13M8 21v-7h8v7M3 9h18"/></svg>
+                <span class="field-copy"><span class="field-title">Property Type</span><select id="sd" aria-label="Property type">
+                    <option value="All">Any Type</option><option>Villa</option><option>Apartment</option><option>House</option><option>Commercial</option>
+                </select></span>
+            </label>
+            <label class="search-field">
+                <svg class="rupee-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14M5 9h14M5 5c5 0 8 1 8 5s-3 5-8 5h1l9 6"/></svg>
+                <span class="field-copy"><span class="field-title">Price Range</span><select id="sp" aria-label="Price range">
+                    <option value="">Any price</option>
+                    <option value="15000">Up to ₹15,000</option>
+                    <option value="30000">Up to ₹30,000</option>
+                    <option value="50000">Up to ₹50,000</option>
+                </select></span>
+            </label>
+            <label class="search-field">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5v14M3 14h18v5M7 14V9h5a4 4 0 0 1 4 4v1M3 10h4"/></svg>
+                <span class="field-copy"><span class="field-title">Bedrooms</span><select id="sb" aria-label="Bedrooms">
+                    <option value="0">Any</option>
+                    <option value="1">1+</option>
+                    <option value="2">2+</option>
+                    <option value="3">3+</option>
+                    <option value="4">4+</option>
+                </select></span>
+            </label>
+            <button class="btn p search-button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="7.3"/><path d="m16.2 16.2 5 5"/></svg><span>Search</span></button>
+        </form>
+        <div class="trust">
+            <div class="trust-item"><span class="trust-icon home-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8M5.5 9.5V21h13V9.5M9 21v-7h6v7"/></svg></span><span><b>Verified Listings</b><small>100% verified properties<br>for your peace of mind</small></span></div>
+            <div class="trust-item"><span class="trust-icon secure-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 19 6v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg></span><span><b>Secure Transactions</b><small>Safe &amp; hassle free<br>buying and renting</small></span></div>
+            <div class="trust-item"><span class="trust-icon support-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13v-2a8 8 0 0 1 16 0v2M4 13H3v4h4v-5H4Zm16 0h1v4h-4v-5h3ZM17 18c-1 2-3 3-6 3"/></svg></span><span><b>Expert Support</b><small>Dedicated support at<br>every step</small></span></div>
+            <div class="trust-item"><span class="trust-icon deals-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8M5.5 9.5V21h13V9.5M9 21v-7h6v7"/><path d="m17 4 1-2m2 5 2-1"/></svg></span><span><b>Best Deals</b><small>Get the best prices and<br>exclusive offers</small></span></div>
+        </div>
+        <div class="sec" id="props">
+            <h2>Featured Properties</h2>
+            <a class="view-all" href="#list">View All <span aria-hidden="true">›</span></a>
+        </div>
+        <div class="chips" id="chips"></div>
+        <div class="grid" id="list"></div>
+        <div class="sec"></div>
+        <div class="promo">
+            <div class="big">
+                <div class="promo-copy"><small>New Launch</small>
+                    <h2>Luxury Homes for a<br>Modern Lifestyle</h2>
+                    <p>Premium villas &amp; apartments in prime locations.</p>
+                    <a class="btn p" href="property.html?id=1">Explore Now <span aria-hidden="true">⟶</span></a>
+                </div>
+                <div class="promo-photo" role="img" aria-label="Bright modern luxury living room"></div>
+            </div>
+            <div class="help">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&amp;fit=crop&amp;w=160&amp;h=160&amp;q=80" alt="Our property support team">
+                <div class="help-copy"><h3>Need Help?</h3>
+                    <p>Talk to our property expert</p>
+                    <small>Get personalized recommendations and guidance.</small>
+                    <a class="btn sm" href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="category-heading">
+            <h2>Explore Properties by Categories</h2>
+            <p>Find the right properties for your needs</p>
+        </div><div class="cats" id="cats"></div>
+        <section class="home-stats" aria-label="Home Nest achievements"><div><b>12,000+</b><span>Verified properties</span></div><div><b>8,500+</b><span>Happy residents</span></div><div><b>24/7</b><span>Customer support</span></div><div><b>15+</b><span>Neighbourhoods covered</span></div></section>
+        <section class="how-it-works" id="services"><div><p class="section-label">HOW IT WORKS</p><h2>Find your next home in three simple steps.</h2><p>From your first search to a confirmed booking, Home Nest keeps every part of your rental journey clear and secure.</p></div><div class="process-grid"><article><span>01</span><h3>Search &amp; compare</h3><p>Browse verified homes, photos, amenities and transparent pricing.</p></article><article><span>02</span><h3>Visit your favourites</h3><p>Schedule a viewing and speak directly with a property expert.</p></article><article><span>03</span><h3>Book with confidence</h3><p>Choose a convenient payment method and receive instant confirmation.</p></article></div></section>
+        <section class="neighbourhoods"><div><p class="section-label">POPULAR AREAS</p><h2>Explore Bangalore neighbourhoods</h2><p>Homes in places that fit your commute, lifestyle and budget.</p></div><div class="area-links"><a href="#props">Whitefield <small>320+ homes</small></a><a href="#props">Koramangala <small>210+ homes</small></a><a href="#props">Indiranagar <small>180+ homes</small></a><a href="#props">HSR Layout <small>260+ homes</small></a></div></section>
+    </div>
+    <footer id="contact" class="site-footer"><div class="wrap footer-grid"><div><a class="footer-brand" href="index.html">Home Nest</a><p>Making it easier to find a place you’ll love to call home.</p><p class="footer-contact">support@homenest.example<br>+91 80 4123 4567</p></div><div><h3>Explore</h3><a href="#props">Properties</a><a href="#services">How it works</a><a href="#contact">Contact us</a></div><div><h3>For customers</h3><a href="dashboard.html">My dashboard</a><a href="booking.html?id=1">Book a property</a><a href="#services">Payment options</a></div><div><h3>Stay updated</h3><p>New verified homes and helpful rental tips, once a month.</p><form class="footer-form" onsubmit="event.preventDefault();toast('Thanks for subscribing!')"><input type="email" aria-label="Email address" placeholder="Your email address" required><button class="btn p sm">Subscribe</button></form></div></div><div class="wrap footer-bottom"><span>© 2026 Home Nest. All rights reserved.</span><span>Privacy Policy · Terms of Use</span></div></footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
